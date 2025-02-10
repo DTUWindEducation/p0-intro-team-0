@@ -4,16 +4,16 @@ In `GitAnswers.md`, write 1 to 2 sentences to answer each of the following
 questions.  (Note that for question 6 you will need to also push an image.)
 
 1.	What is the difference between git and GitLab?  
-Git is a software program that can be installed in a computer that works as a version control system for tracking code changes, while GitLab is an online hosting service that can host a copy of a Git repository that one can access with secure internet connection.
+Git is a software program (installed in a computer) that works as a version control system for tracking code changes, while GitLab is an online hosting service that can host a copy of a Git repository that one can access with secure internet connection.
 
 2.	What is the difference between GitLab, GitHub, and BitBucket? 
-GitLab, GitHub and Bitbucket are all Git repository hosting services. While they all support Git, each one has unique features and target different audiences, e.g. GitLab is DevOps-friendly, GitHub is community-driven and Bitbucket caters to private repositories and businesses.
+GitLab, GitHub and Bitbucket are all Git repository online hosting services. While they all support Git, each one has unique features and targets different audiences, e.g. GitLab is DevOps-friendly, GitHub is community-driven and Bitbucket caters to private repositories and businesses.
 
 3.	Why would I ever want to use git, but not GitLab?  
-One would want to just use Git (and not GitLab) if one only needed local version control (in its own computer)
+One would want to just use Git (and not GitLab) if one only needed local version control (in its own computer).
 
-4.	What are the steps to update the GitLab server with some changes I made on my computer?  
-Check for changes with "git status" -> Stage the modified files with "git add" -> Commit the changes with "git commit -m (…) including a message -> Pull latest changes from GitLab to avoid conflicts with "git pull …" -> Push local changes to GitLab with "git push"
+4.	What are the steps to update the GitLab server with some changes I made on my computer?
+Check for changes with "git status" -> Pull latest changes from GitLab to avoid conflicts with "git pull …" -> Stage the modified files with "git add" -> Commit the changes with "git commit -m (…) including a message -> Push local changes to GitLab with "git push"
 
 5.	What is a branch and why would I use one?  
 A branch is a copy of the main repository in which you can try out new things without potentially destroying the repository. It allows for working simultaniously of a project. 
