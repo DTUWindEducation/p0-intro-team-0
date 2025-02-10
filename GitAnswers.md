@@ -28,7 +28,7 @@ questions.  (Note that for question 6 you will need to also push an image.)
 
 
 9.	Should I from now on version my word and powerpoint slides using git? Why/why not?  
-
+You can, but the version control would only be in a "was it changed" way, and cannot show line-by-line differences. 
 
 10.	What could happen when I push my latest commit to the remote repository without pulling first?  
 
