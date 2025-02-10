@@ -31,11 +31,11 @@ Check for changes with "git status" -> Stage the modified files with "git add" -
 You can, but the version control would only be in a "was it changed" way, and cannot show line-by-line differences. 
 
 10.	What could happen when I push my latest commit to the remote repository without pulling first?  
-
+The push fails, and git asks you to pull before pushing, as the remote repo has changes other than the one you are pushing.
 
 11.	What happens when I pull without commiting my local changes first?  
-
+If the pull doesn't affect files you have changes in, nothing. If it does, git will ask you to resolve the conflicts first.
 
 12.	What is the difference between branching and forking?
-
+Branching creates a branch in the same repo, but forking creates a new repo, and copies all the current files. 
 
