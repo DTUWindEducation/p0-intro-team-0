@@ -16,15 +16,21 @@ One would want to just use Git (and not GitLab) if one only needed local version
 Check for changes with "git status" -> Stage the modified files with "git add" -> Commit the changes with "git commit -m (…) including a message -> Pull latest changes from GitLab to avoid conflicts with "git pull …" -> Push local changes to GitLab with "git push"
 
 5.	What is a branch and why would I use one?  
-
+A branch is a copy of the main repository in which you can try out new things without potentially destroying the repository. It allows for working simultaniously of a project. 
 
 6.	How could you visualize a branch with 3 commits, and then another branch that breaks off after the second commit and has a single commit?  
-
+<img src="q6.png" alt="Branches visualized" width="200" height="300">
 
 7.	Give an example of a set of git commands that would result in a merge conflict.  
-
+If two branches i.e. 'Frederik' and 'Renato' both create a new file and make different changes:
+git checkout Frederik/Renato
+git add file.txt (With some different text for the two branches)
+git commit -m "Update file.txt in Frederik/Renato"
+git checkout Renato
+git merge Frederik
 
 8.	Is Git suitable for latex documents?  
+Yes Git should be suitable for LaTeX is a Markdown language (non-binary).
 
 
 9.	Should I from now on version my word and powerpoint slides using git? Why/why not?  
