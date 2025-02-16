@@ -1,5 +1,6 @@
 """Test your functions from Week 2 assignment.
 """
+import pytest
 import preclass_assignment.functions as fxn
 
 
@@ -14,16 +15,15 @@ def test_greet(capsys):
     assert captured.out == 'Hello, world!\n'  # check that the greeting was what we expect
 
 
-
-def test_goldilocks(capsys):
+@pytest.mark.parametrize("inp, out", [(130, 'Too small!\n'), (140, 'Just right. :)\n'), (160, 'Too large!\n')])
+def test_goldilocks(inp, out, capsys):
     """Check goldilocks returns expected output"""
     # given
-    inp = 140
     # when
     fxn.goldilocks(inp)
     captured = capsys.readouterr()
     # then
-    assert captured.out == 'Just right. :)\n'  # TODO! Update the contents of this function so it correctly tests goldilocks
+    assert captured.out == out  # TODO! Update the contents of this function so it correctly tests goldilocks
 
 
 def test_square_list():
