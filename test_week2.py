@@ -37,15 +37,23 @@ def test_square_list():
 def test_fibonacci_stop():
     """Check fibonacci functions works as expected."""
     # given
-    # given
+    inp = [10, 22]
+    exp_out = [[1,1,2,3,5,8],[1,1,2,3,5,8,13,21]]
     # when
+    out = fxn.fibonacci_stop(inp)
     # then
-    assert False  # TODO! Update the contents of this function so it correctly tests fibonacci_stop
+    assert exp_out == out  
 
 
 def test_clean_pitch():
     """Check clean_pitch works as expected."""
     # given
+    inp1 = [-1, 2, 6, 95]
+    inp2 = [1, 0, 0, 0]
+    exp_out = [-999, 2, 6, 95]
+    
     # when
+    out = fxn.clean_pitch(inp1,inp2)
+    
     # then
-    assert False  # TODO! Update the contents of this function so it correctly tests clean_pitch
+    assert exp_out == out  # TODO! Update the contents of this function so it correctly tests clean_pitch
