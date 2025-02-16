@@ -36,16 +36,16 @@ def test_square_list():
     # then
     assert exp_out == out  # throw error if actual and expected output don't match
 
-
-def test_fibonacci_stop():
+@pytest.mark.parametrize("inp, out", [(10, [1,1,2,3,5,8]), (22,[1,1,2,3,5,8,13,21]), (2,[1,1,2])])
+def test_fibonacci_stop(inp,out):
     """Check fibonacci functions works as expected."""
     # given
-    inp = 10
-    exp_out = [1,1,2,3,5,8]
+    #inp = 10
+    #exp_out = [1,1,2,3,5,8]
     # when
-    out = fxn.fibonacci_stop(inp)
+    #out = fxn.fibonacci_stop(inp)
     # then
-    assert exp_out == out  
+    assert fxn.fibonacci_stop(inp) == out  
 
 
 def test_clean_pitch():
